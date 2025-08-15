@@ -1,0 +1,158 @@
+/* Overall Header Styling */
+.main-header {
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Top Promotional Bar */
+.top-bar {
+    background-color: #000;
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.top-bar-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.promo-text {
+    margin: 0;
+    flex-grow: 1;
+}
+
+.social-icons {
+    position: absolute;
+    right: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.social-icons a:hover {
+    color: #ccc;
+}
+
+/* Main Header Section */
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-container .logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #000;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.search-bar {
+    position: relative;
+    width: 400px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 50px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.search-bar input:focus {
+    border-color: #000;
+}
+
+.search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+}
+
+.header-icons {
+    display: flex;
+    gap: 25px;
+}
+
+.header-icons a {
+    color: #000;
+    font-size: 1.3rem;
+    transition: color 0.2s;
+}
+
+.header-icons a:hover {
+    color: #555;
+}
+
+/* Navigation Menu */
+.header-nav {
+    background-color: #f8f8f8;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-item a {
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.2s;
+    position: relative;
+}
+
+.nav-item a:hover {
+    color: #000;
+}
+
+/* Underline effect on hover */
+.nav-item a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-item a:hover::after {
+    transform: scaleX(1);
+}
